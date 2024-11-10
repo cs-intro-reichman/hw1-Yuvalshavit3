@@ -6,11 +6,13 @@ public class Bill3 {
 		String name2 = args[1];
 		String name3 = args[2];
 		
-		Double sum1 = Double.parseDouble(args[3]);
+		double sum1 = Double.parseDouble(args[3]);
 
-		Double sumForEachOne = sum1 / 3;
-		Double finalSum = Math.ceil(sumForEachOne);
-		System.out.println("Dear " + name3 + ", " + name2 + ", and " + name1 + ": pay " + finalSum + " Shekels each.");
+		double sumForEach = Math.ceil(sum1 / 3);
+
+		String formattedSum = String.format("%.1f", sumForEach);
+
+		System.out.println("Dear " + name3 + ", " + name2 + ", and " + name1 + ": pay " + sumForEach + " Shekels each.");
 
 	    
 	}
