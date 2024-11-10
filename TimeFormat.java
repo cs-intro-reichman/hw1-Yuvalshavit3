@@ -32,7 +32,7 @@ public class TimeFormat {
 
 		// decides between AM and PM
 		String AmPm;
-		if (hours > 12) {
+		if (hours >= 12) {
 			AmPm = "PM";
 		} else {
 			AmPm = "AM";
